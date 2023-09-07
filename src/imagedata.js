@@ -1,0 +1,1 @@
+export {default as mypic} from "./Image/me1.jpg"
