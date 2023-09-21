@@ -7,6 +7,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import { useState } from 'react';
 import Home from './Components/Home';
+import Project from './Components/Project';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path='/home' element={<Home mode={mode} tooglemode={tooglemode} />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/project' element={<Project mode={mode} tooglemode={tooglemode} />}></Route>
         </Routes>
         <Footer mode={mode} tooglemode={tooglemode} />
       </BrowserRouter>

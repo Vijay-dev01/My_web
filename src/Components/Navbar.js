@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
+        const resumeLink = 'https://drive.google.com/file/d/13R7axr4uE-10RojRdutFX2_tewZLMR1C/view';
+      
+        const handleResumeClick = () => {
+          window.open(resumeLink, '_blank');
+        };
+
     return (
         <>
             <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-$
@@ -14,7 +20,7 @@ const Navbar = (props) => {
                     {/* means */}
                     <div className="collapse navbar-collapse align-middle" id="navbarNav">
                         <ul className="navbar-nav ms-auto nav_ul align-items-center">
-                            <li className="nav-item dropdown">
+                            {/* <li className="nav-item dropdown">
                                 <Link className={`dropdown-toggle text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/about" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     About
                                 </Link>
@@ -23,15 +29,18 @@ const Navbar = (props) => {
                                     <li className='nav-item'><Link className="dropdown-item" to="/">Education</Link></li>
                                     <li className='nav-item'><Link className="dropdown-item" to="/">Experience</Link></li>
                                 </ul>
+                            </li> */}
+                            <li className="nav-item">
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/home">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/services">Services</Link>
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/services">Skills</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/portfolio">Portfolio</Link>
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/project">Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/contact">Contact Us</Link>
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} onClick={handleResumeClick}>Resume</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className={`dropdown-toggle text-${props.mode === 'light' ? 'dark' : 'white'}`} href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
