@@ -8,6 +8,8 @@ import Contact from './Components/Contact';
 import { useState } from 'react';
 import Home from './Components/Home';
 import Project from './Components/Project';
+import Login from './Components/Authentication/Login';
+import SignUp from './Components/Authentication/SignUp';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/project' element={<Project mode={mode} tooglemode={tooglemode} />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/' element={<SignUp />}></Route>
         </Routes>
         <Footer mode={mode} tooglemode={tooglemode} />
       </BrowserRouter>
