@@ -80,8 +80,6 @@ const Navbar = (props) => {
                                 </button>
                             </li>
                         </ul>
-                        <ul className="navbar-nav ">
-                        </ul>
                     </div>
                 </div>
             </nav>
