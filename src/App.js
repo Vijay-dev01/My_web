@@ -31,12 +31,12 @@ function App() {
       <BrowserRouter>
         <Navbar mode={mode} tooglemode={tooglemode} />
         <Routes>
-          <Route path='/home' element={<Home mode={mode} tooglemode={tooglemode} />}></Route>
+          <Route path='/' element={<Home mode={mode} tooglemode={tooglemode} />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/project' element={<Project mode={mode} tooglemode={tooglemode} />}></Route>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='/' element={<SignUp />}></Route>
+          <Route path='/signup' element={<SignUp />}></Route>
           <Route path='/skills' element={<Skills mode={mode} tooglemode={tooglemode} />}></Route>
         </Routes>
         <Footer mode={mode} tooglemode={tooglemode} />

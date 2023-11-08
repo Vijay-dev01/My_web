@@ -19,7 +19,7 @@ const Navbar = (props) => {
     };
 
     onAuthStateChanged(firebaseAuth,(currentUser)=>{
-        if(!currentUser) navigate("/login");
+        if(!currentUser) navigate("/signup");
     });
 
     return (
@@ -45,7 +45,7 @@ const Navbar = (props) => {
                                 </ul>
                             </li> */}
                             <li className="nav-item">
-                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/home">About</Link>
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/">About</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/skills">Skills</Link>
@@ -68,7 +68,7 @@ const Navbar = (props) => {
                             </li>
                             <div className="mx-3">
                                 <Link to="/login" type="button" className="btn1 mx-2">Login</Link>
-                                <Link to="/signup" type="button" className="btn2 mx-2">Sign Up</Link>
+                                <Link to="/" type="button" className="btn2 mx-2">Sign Up</Link>
                             </div>
                             <div className={`form-check form-switch ms-5 text-${props.mode === 'light' ? 'dark' : 'white'}`}>
                                 <input className="form-check-input" type="checkbox" onClick={props.tooglemode} id="flexSwitchCheckDefault" />

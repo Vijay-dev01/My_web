@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth'
-import { firebaseAuth } from '../../utils/firebase-config'
 import { useNavigate } from 'react-router-dom';
+import { firebaseAuth } from '../../utils/firebase-config'
 
 
 function Login() {
@@ -18,7 +18,7 @@ function Login() {
     }
 
     onAuthStateChanged(firebaseAuth, (currentUser) => {
-        if (currentUser) navigate("/home")
+        if (currentUser) navigate("/")
     })
 
     return (
@@ -32,8 +32,8 @@ function Login() {
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Enter email"
-                        value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                     />
                 </div>
                 <div className="form-group">
@@ -43,8 +43,8 @@ function Login() {
                         className="form-control"
                         id="exampleInputPassword1"
                         placeholder="Password"
-                        value={password}
                         onChange={(e) => setPassword(e.target.value)}
+                        value={password}
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">LogIn</button>
