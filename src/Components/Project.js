@@ -109,8 +109,6 @@ const Project = (props) => {
                                 </div>
                         </div>
                     </div>
-                    
-                  
                 </div>
             </div>
         </div>

@@ -48,7 +48,7 @@ const Navbar = (props) => {
                                 <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/home">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/services">Skills</Link>
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/skills">Skills</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/project">Projects</Link>

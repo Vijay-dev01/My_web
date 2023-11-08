@@ -10,6 +10,7 @@ import Home from './Components/Home';
 import Project from './Components/Project';
 import Login from './Components/Authentication/Login';
 import SignUp from './Components/Authentication/SignUp';
+import Skills from './Components/Skills';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path='/project' element={<Project mode={mode} tooglemode={tooglemode} />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/' element={<SignUp />}></Route>
+          <Route path='/skills' element={<Skills mode={mode} tooglemode={tooglemode} />}></Route>
         </Routes>
         <Footer mode={mode} tooglemode={tooglemode} />
       </BrowserRouter>
