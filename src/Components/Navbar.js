@@ -7,7 +7,7 @@ import { firebaseAuth } from '../utils/firebase-config';
 
 const Navbar = (props) => {
     const navigate = useNavigate();
-    const resumeLink = 'https://drive.google.com/file/d/13R7axr4uE-10RojRdutFX2_tewZLMR1C/view';
+    const resumeLink = 'https://drive.google.com/file/d/1jsdzixqW2CTISVjCAe2VSFDAYTmjCK0c/view';
 
     const handleResumeClick = () => {
         window.open(resumeLink, '_blank');
@@ -61,7 +61,7 @@ const Navbar = (props) => {
                                     More
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="/">Action</a></li>
+                                    <li><Link className="dropdown-item" to="/certificates">Certificates</Link></li>
                                     <li><a className="dropdown-item" href="/">Another action</a></li>
                                     <li><a className="dropdown-item" href="/">Something else here</a></li>
                                 </ul>

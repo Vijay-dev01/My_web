@@ -1,2 +1,6 @@
 export {default as mypic} from "./Image/me1.jpg"
 export {default as project1} from "./Image/template2-home.webp"
+export {default as netflix} from "./Image/netflix.jpg"
+export {default as weather} from "./Image/Free-Weather-Mobile-App-Ui-Kit-Freebiefy-com.jpg"
+export {default as DreamsHRMS} from "./Image/login-banner.png"
+export {default as ReactCertificate} from "./Image/React Certificate.jpg"

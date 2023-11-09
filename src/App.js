@@ -11,6 +11,7 @@ import Project from './Components/Project';
 import Login from './Components/Authentication/Login';
 import SignUp from './Components/Authentication/SignUp';
 import Skills from './Components/Skills';
+import Certificates from './Components/Certificates';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<SignUp />}></Route>
           <Route path='/skills' element={<Skills mode={mode} tooglemode={tooglemode} />}></Route>
+          <Route path='/certificates' element={<Certificates mode={mode} tooglemode={tooglemode} />}></Route>
         </Routes>
         <Footer mode={mode} tooglemode={tooglemode} />
       </BrowserRouter>

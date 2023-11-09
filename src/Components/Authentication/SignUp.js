@@ -18,7 +18,7 @@ function SignUp() {
     }
 
     onAuthStateChanged(firebaseAuth,(currentUser)=>{
-        if(currentUser) navigate("/login")
+        if(currentUser) navigate("/")
     })
 
     return (
