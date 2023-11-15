@@ -1,5 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -31,10 +33,11 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar mode={mode} tooglemode={tooglemode} />
+        <ToastContainer theme='dark'/>
         <Routes>
           <Route path='/' element={<Home mode={mode} tooglemode={tooglemode} />}></Route>
           <Route path='/about' element={<About />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/contact' element={<Contact mode={mode} tooglemode={tooglemode}/>}></Route>
           <Route path='/project' element={<Project mode={mode} tooglemode={tooglemode} />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<SignUp />}></Route>

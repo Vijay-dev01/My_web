@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { firebaseAuth } from '../utils/firebase-config';
+import { mypic } from '../imagedata';
 
 const Navbar = (props) => {
     const navigate = useNavigate();
@@ -18,16 +19,19 @@ const Navbar = (props) => {
         border: 'none',
     };
 
-    onAuthStateChanged(firebaseAuth,(currentUser)=>{
-        if(!currentUser) navigate("/signup");
+    onAuthStateChanged(firebaseAuth, (currentUser) => {
+        if (!currentUser) navigate("/signup");
     });
 
     return (
         <>
-            <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-$
-            {props.mode} `}>
+            <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode === 'light' ? 'white' : 'dark'}
+    text-${props.mode === 'light' ? 'white' : 'dark'} `}>
                 <div className="container py-2">
-                    <Link className="navbar-brand" to="/home">Vijay G</Link>
+                    <Link className="navbar-brand" to="/home">
+                        <img src={mypic} alt="Logo" className="rounded-circle" style={{ width: '40px', height: '40px', marginRight: '10px' }} />
+                        Vijay G
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -45,13 +49,16 @@ const Navbar = (props) => {
                                 </ul>
                             </li> */}
                             <li className="nav-item">
-                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/">About</Link>
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/">Home</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/skills">Skills</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/project">Projects</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/contact">Contact</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} onClick={handleResumeClick}>Resume</Link>

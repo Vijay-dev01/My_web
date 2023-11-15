@@ -1,10 +1,10 @@
 import React from 'react'
 import { mypic } from '../imagedata'
+import { Link } from 'react-router-dom'
 
 export default function Home(props) {
     return (
-        <div className={` bg-${props.mode === 'light' ? 'white' : 'dark'}
-    text-${props.mode === 'light' ? 'white' : 'dark'}`}>
+        <div className={`text-${props.mode === 'light' ? 'white' : 'dark'}`}>
             <div className='container my-5 py-5'>
                 <div className='row align-items-center'>
                     <div className='col-md-6'>
@@ -17,7 +17,7 @@ export default function Home(props) {
                                 web applications using the React.js library. React is a popular JavaScript library that is widely
                                 used for building user interfaces. React Developers are typically responsible for writing clean,
                                 reusable, and efficient code that meets the needs of the project.</p>
-                            <button type='button' className="btn2 mx-2">Contact Now</button>
+                            <button type='button' className="btn2 mx-2"><Link to='/contact' style={{ textDecoration: 'none', color: 'white' }}>Contact Now</Link></button>
                         </div>
                     </div>
                     <div className='col-md-6'>
