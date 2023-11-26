@@ -17,16 +17,16 @@ const Footer = (props) => {
                                     a front-end JavaScript library.</p>
                                 <div className="footer-icons">
                                     <a href="https://github.com/Vijay-dev01" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-github" />
+                                        <i className="fa-brands fa-github" />
                                     </a>
                                     <a href="https://instagram.com/thev_i_j_a_y?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-twitter" />
+                                        <i className="fa-brands fa-twitter" />
                                     </a>
                                     <a href="https://instagram.com/thev_i_j_a_y?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-instagram" />
+                                        <i className="fa-brands fa-instagram" />
                                     </a>
                                     <a href="https://www.linkedin.com/in/vijay-g-918775236" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-linkedin-in" />
+                                        <i className="fa-brands fa-linkedin-in" />
                                     </a>
                                 </div>
                             </div>

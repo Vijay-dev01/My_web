@@ -62,11 +62,11 @@ const Contact = (props) => {
                     <form ref={form} onSubmit={sendEmail}>
                       <div className="row gy-4 gy-xl-5 p-4 p-xl-5">
                         <div className="col-12">
-                          <label for="fullname" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Full Name <span className="text-danger">*</span></label>
+                          <label htmlFor="fullname" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Full Name <span className="text-danger">*</span></label>
                           <input type="text" className="form-control" id="fullname" name="user_name" required />
                         </div>
                         <div className="col-12">
-                          <label for="email" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Email <span className="text-danger">*</span></label>
+                          <label htmlFor="email" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Email <span className="text-danger">*</span></label>
                           <div className="input-group">
                             <span className="input-group-text">
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -77,11 +77,11 @@ const Contact = (props) => {
                           </div>
                         </div>
                         <div className="col-12">
-                          <label for="subject" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Subject <span className="text-danger">*</span></label>
+                          <label htmlFor="subject" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Subject <span className="text-danger">*</span></label>
                           <input type="text" className="form-control" id="subject" name="user_subject" required />
                         </div>
                         <div className="col-12">
-                          <label for="message" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Message <span className="text-danger">*</span></label>
+                          <label htmlFor="message" className={`text-${props.mode === 'light' ? 'dark' : 'white'} form-label`}>Message <span className="text-danger">*</span></label>
                           <textarea className="form-control" id="message" name="message" rows="3" required></textarea>
                         </div>
                         <div className="col-12">
