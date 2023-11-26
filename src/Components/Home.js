@@ -17,7 +17,10 @@ export default function Home(props) {
                                 web applications using the React.js library. React is a popular JavaScript library that is widely
                                 used for building user interfaces. React Developers are typically responsible for writing clean,
                                 reusable, and efficient code that meets the needs of the project.</p>
-                            <button type='button' className="btn2 mx-2"><Link to='/contact' style={{ textDecoration: 'none', color: 'white' }}>Contact Now</Link></button>
+                            {/* <button type='button' className="btn2 mx-2"><Link to='/contact' style={{ textDecoration: 'none', color: 'white' }}>Contact Now</Link></button> */}
+                            <Link to='/contact' style={{ textDecoration: 'none', color: 'white' }}>
+                                <button type='button' className="btn2 mx-2">Contact Now</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='col-md-6'>

@@ -11,6 +11,7 @@ import postman from '../assets/images/62cc1b3a150d5de9a3dad5f7.png'
 import gitlab from '../assets/images/icons8-gitlab-96.png'
 import material from '../assets/images/icons8-material-ui-96.png'
 import npm from '../assets/images/icons8-npm-96.png'
+import { ParticlesJs, TreeJs, VantaJs } from '../imagedata';
 
 export default function Skills(props) {
     return (
@@ -90,6 +91,24 @@ export default function Skills(props) {
                         <div className="text-center mb-5">
                             <h3 className={`font-weight-bold text-${props.mode === 'light' ? 'dark' : 'white'}`}>GitLab</h3>
                             <img src={gitlab} alt="JavaScript" width="80" height="80" />
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="text-center mb-5">
+                            <h3 className={`font-weight-bold text-${props.mode === 'light' ? 'dark' : 'white'}`}>Tree Js</h3>
+                            <img src={TreeJs} alt="JavaScript" width="80" height="80" />
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="text-center mb-5">
+                            <h3 className={`font-weight-bold text-${props.mode === 'light' ? 'dark' : 'white'}`}>Vanta Js</h3>
+                            <img src={VantaJs} alt="JavaScript" width="80" height="80" />
+                        </div>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="text-center mb-5">
+                            <h3 className={`font-weight-bold text-${props.mode === 'light' ? 'dark' : 'white'}`}>Particles Js</h3>
+                            <img src={ParticlesJs} alt="JavaScript" width="80" height="80" />
                         </div>
                     </div>
                 </div>

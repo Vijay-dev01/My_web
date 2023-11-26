@@ -34,7 +34,7 @@ const Footer = (props) => {
                                 <h5>Quick Links</h5>
                                 <ul>
                                     <li className="nav-item">
-                                        <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/">Services</Link>
+                                        <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="/contact">Contact</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className={`text-${props.mode === 'light' ? 'dark' : 'white'}`} to="https://vijay-dev01.github.io/My_web/" target="_blank">Portfolio</Link>

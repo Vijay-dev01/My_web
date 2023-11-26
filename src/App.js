@@ -14,6 +14,7 @@ import Login from './Components/Authentication/Login';
 import SignUp from './Components/Authentication/SignUp';
 import Skills from './Components/Skills';
 import Certificates from './Components/Certificates';
+import ParticlesBg from './particlesJS/ParticlesBg';
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <div className={`app ${mode}`}>
+        <ParticlesBg />
         <Navbar mode={mode} tooglemode={tooglemode} />
         <ToastContainer theme='dark'/>
         <Routes>
@@ -45,6 +48,7 @@ function App() {
           <Route path='/certificates' element={<Certificates mode={mode} tooglemode={tooglemode} />}></Route>
         </Routes>
         <Footer mode={mode} tooglemode={tooglemode} />
+        </div>
       </BrowserRouter>
 
     </>

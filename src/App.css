@@ -207,3 +207,17 @@
   background-color: #f8f9fa;
   color: #333;
 }
+
+/* Set position relative for the App container */
+.app {
+  position: relative;
+}
+
+/* Style your particle canvas to ensure it doesn't cover links */
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it's behind other content */
+  /* Add more styling as needed */
+}

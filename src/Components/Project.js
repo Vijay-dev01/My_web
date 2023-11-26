@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { DreamsHRMS, netflix, project1, weather } from '../imagedata'
+import { DreamsHRMS, QuessNumber, netflix, project1, weather } from '../imagedata'
 
 const Project = (props) => {
     return (
@@ -90,18 +90,19 @@ const Project = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className={`card ${props.mode === 'light' ? 'light-card' : 'dark-card'}`} style={{ width: '25rem' }}>
-                            <img src="https://i.imgur.com/ZTkt4I5.jpg" className="card-img-top" alt="..." />
+                            <img src={QuessNumber} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <Link to="#" target="_blank" className={`btn ${props.mode === 'light' ? 'btn-dark' : 'btn-light'}`}><i className="fas fa-link"></i> Visit Site</Link>
-                                <Link to="#" target="_blank" className={`btn ${props.mode === 'light' ? 'btn-dark' : 'btn-light'}`}><i className="fab fa-github"></i> Github</Link>
+                                <h5 className="card-title">Quess The Number</h5>
+                                <h6 className="card-subtitle mb-2 text-muted">Number Game</h6>
+                                <p className="card-text">Your goal is to guess the number the game has in mind. The rules of this game are straightforward. For every number you guess, if you didn't guess the number correctly, you will be told whether your guess is greater than or less than the actual number the game has in mind. With that information, you make another guess to get closer to the answer.</p>
+                                <Link to="https://vijay-dev01.github.io/Quess-the-number/" target="_blank" className={`btn ${props.mode === 'light' ? 'btn-dark' : 'btn-light'}`}><i className="fas fa-link"></i> Visit Site</Link>
+                                <Link to="https://github.com/Vijay-dev01/Quess-the-number" target="_blank" className={`btn ${props.mode === 'light' ? 'btn-dark' : 'btn-light'}`}><i className="fab fa-github"></i> Github</Link>
                             </div>
                             <div className='card-footer'>
                                 <span className='badge rounded-pill text-dark bg-light' style={{ padding: "5px 10px", margin: "5px" }}>React</span>
                                 <span className='badge rounded-pill text-dark bg-light' style={{ padding: "5px 10px", margin: "5px" }}>HTML</span>
-                                <span className='badge rounded-pill text-dark bg-light' style={{ padding: "5px 10px", margin: "5px" }}>Boostrap</span>
+                                <span className='badge rounded-pill text-dark bg-light' style={{ padding: "5px 10px", margin: "5px" }}>CSS</span>
+                                <span className='badge rounded-pill text-dark bg-light' style={{ padding: "5px 10px", margin: "5px" }}>Hooks</span>
                             </div>
                         </div>
                     </div>
