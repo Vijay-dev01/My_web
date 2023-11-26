@@ -1,29 +1,35 @@
 {
   "files": {
-    "main.css": "/My_web/static/css/main.f6c2f4ef.css",
-    "main.js": "/My_web/static/js/main.09124eb8.js",
+    "main.css": "/My_web/static/css/main.8a017961.css",
+    "main.js": "/My_web/static/js/main.10f34d73.js",
     "static/js/787.128fc6e9.chunk.js": "/My_web/static/js/787.128fc6e9.chunk.js",
+    "static/media/Vijay G_JavaScript.jpg": "/My_web/static/media/Vijay G_JavaScript.130400e11ecc7a70b188.jpg",
+    "static/media/Vijay G -React-Js.jpg": "/My_web/static/media/Vijay G -React-Js.b94cd29f26b6792b41cb.jpg",
     "static/media/me1.jpg": "/My_web/static/media/me1.a935f20aa2e61960bcfd.jpg",
+    "static/media/Quess-the-number.png": "/My_web/static/media/Quess-the-number.5d0fccc04ff0eb948813.png",
     "static/media/netflix.jpg": "/My_web/static/media/netflix.115ae76053fdd5e9b496.jpg",
     "static/media/React Certificate.jpg": "/My_web/static/media/React Certificate.a93fa7578a6fc099e82f.jpg",
     "static/media/template2-home.webp": "/My_web/static/media/template2-home.7a80f6e1db483857cf5b.webp",
     "static/media/login-banner.png": "/My_web/static/media/login-banner.8475314dc25bb09cb13b.png",
     "static/media/react.png": "/My_web/static/media/react.35639ed930462bfcd544.png",
+    "static/media/diffusion.png": "/My_web/static/media/diffusion.7deb9146237a5872a846.png",
+    "static/media/nanotechnology (1).png": "/My_web/static/media/nanotechnology (1).0679afdb2283895a778e.png",
     "static/media/git.png": "/My_web/static/media/git.bad2b1118eff814bb319.png",
     "static/media/nodejs.png": "/My_web/static/media/nodejs.007e99f68b718e476aba.png",
     "static/media/Free-Weather-Mobile-App-Ui-Kit-Freebiefy-com.jpg": "/My_web/static/media/Free-Weather-Mobile-App-Ui-Kit-Freebiefy-com.8f9c5acca31ea9ff8088.jpg",
+    "static/media/Three.js_Icon.svg.png": "/My_web/static/media/Three.js_Icon.svg.7a27b592b04e0925f674.png",
     "static/media/html-5.png": "/My_web/static/media/html-5.a92a549a591f4acb527a.png",
     "static/media/css.png": "/My_web/static/media/css.02d225c7df0b28341d8d.png",
     "static/media/png": "/My_web/static/media/62cc1b3a150d5de9a3dad5f7.2fb2d4164a7e6eaf6f65.png",
     "static/media/java-script.png": "/My_web/static/media/java-script.78206ba65e01c7d57080.png",
     "static/media/bootstrap.png": "/My_web/static/media/bootstrap.268c4375260420e8d982.png",
     "index.html": "/My_web/index.html",
-    "main.f6c2f4ef.css.map": "/My_web/static/css/main.f6c2f4ef.css.map",
-    "main.09124eb8.js.map": "/My_web/static/js/main.09124eb8.js.map",
+    "main.8a017961.css.map": "/My_web/static/css/main.8a017961.css.map",
+    "main.10f34d73.js.map": "/My_web/static/js/main.10f34d73.js.map",
     "787.128fc6e9.chunk.js.map": "/My_web/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6c2f4ef.css",
-    "static/js/main.09124eb8.js"
+    "static/css/main.8a017961.css",
+    "static/js/main.10f34d73.js"
   ]
 }
