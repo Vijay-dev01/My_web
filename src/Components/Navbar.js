@@ -30,7 +30,7 @@ const Navbar = (props) => {
                 <div className="container py-2">
                     <Link className="navbar-brand" to="/home">
                         <img src={mypic} alt="Logo" className="rounded-circle" style={{ width: '40px', height: '40px', marginRight: '10px' }} />
-                        Vijay G
+                        Vijay
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
