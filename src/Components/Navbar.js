@@ -23,7 +23,7 @@ const Navbar = (props) => {
         if (!currentUser) navigate("/signup");
     });
 
-    return (
+    return ( 
         <>
             <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode === 'light' ? 'white' : 'dark'}
     text-${props.mode === 'light' ? 'white' : 'dark'} `}>
